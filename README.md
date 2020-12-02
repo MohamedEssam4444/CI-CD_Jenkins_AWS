@@ -7,13 +7,13 @@
 2. Install Jenkins On amazon ec2 instance Ubuntu
 * Here are the key commands for installation:
 
-*`wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -`
+* `wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -`
 * When the key is added, the system returns OK. Next, append the Debian package repo address to the server's sources.list:
-*`sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'`
+* `sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'`
 * When both of these are all set, run update so that apt will use the new repo:
-*`sudo apt update`
+* `sudo apt update`
 * Lastly, install Jenkins and its dependencies:
-*`sudo apt install jenkins`
+* `sudo apt install jenkins`
 * Since systemctl doesn't produce output, you can use its status command to confirm that Jenkins began successfully:
 * `sudo systemctl status jenkins`
 
